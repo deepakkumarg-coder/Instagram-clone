@@ -1,0 +1,28 @@
+{
+  "suggestion": [
+    {
+      "_id": "65abc123",
+      "username": "john_doe",
+      "name": "John Doe",
+      "profileImage": "https://i.pravatar.cc/150?img=1",
+      "followersCount": 1200,
+      "isFollowing": false
+    },
+    {
+      "_id": "65def456",
+      "username": "jane_smith",
+      "name": "Jane Smith",
+      "profileImage": "https://i.pravatar.cc/150?img=47",
+      "followersCount": 850,
+      "isFollowing": false
+    },
+    {
+      "_id": "65ghi789",
+      "username": "alex_wilson",
+      "name": "Alex Wilson",
+      "profileImage": "https://i.pravatar.cc/150?img=33",
+      "followersCount": 2100,
+      "isFollowing": false
+    }
+  ]
+}

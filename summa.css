@@ -1,0 +1,102 @@
+
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  width: 220px;
+
+  padding: 10px 12px;
+
+  border-radius: 10px;
+
+  color: #262626;
+  font-size: 16px;
+  font-weight: 400;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+
+/* ==============================
+   ICON
+============================== */
+
+.menu i {
+  font-size: 23px;
+
+  color: #262626;
+
+  transition: all 0.2s ease;
+}
+
+
+/* React icons */
+
+.menu svg {
+  color: #262626;
+
+  transition: all 0.2s ease;
+}
+
+
+/* ==============================
+   HOVER
+============================== */
+
+.menu:hover {
+  background-color: #f2f2f2;
+
+  color: #262626;
+
+  transform: scale(1.02);
+}
+
+
+/* Hover icon */
+
+.menu:hover i,
+.menu:hover svg {
+  color: #262626;
+
+  transform: scale(1.08);
+}
+
+
+/* ==============================
+   ACTIVE ITEM
+============================== */
+
+.menu.active {
+  background-color: #f2f2f2;
+
+  color: #000000;
+
+  font-weight: 600;
+}
+
+
+/* Active icon */
+
+.menu.active i,
+.menu.active svg {
+  color: #000000;
+
+  transform: scale(1.05);
+}
+
+
+/* ==============================
+   ACTIVE + HOVER
+============================== */
+
+.menu.active:hover {
+  background-color: #eeeeee;
+
+  color: #000000;
+
+  transform: scale(1.02);
+}

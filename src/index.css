@@ -1,13 +1,427 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.feed-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.feed {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.story-section {
+  flex-shrink: 0;
+  overflow-y: hidden;
+  padding: 5px;
+}
+
+.post-section {
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.post-section::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, Safari */
+}
+
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 110px;
+  margin-bottom: 30px;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 220px;
+  /* padding: 5px 12px; */
+  padding: 4px;
+  border-radius: 10px;
+  color: #262626;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu i {
+  font-size: 23px;
+
+  color: #262626;
+
+  transition: all 0.2s ease;
+}
+
+/* React icons */
+
+.menu svg {
+  color: #262626;
+
+  transition: all 0.2s ease;
+}
+.menu:hover i,
+.menu:hover svg {
+  color: #262626;
+
+  transform: scale(1.08);
+}
+
+.menu:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.02);
+}
+
+.menu.active {
+  background-color: #f2f2f2;
+  color: #000;
+  font-weight: 600;
+}
+
+/* Push Threads + More to bottom */
+.bottom-menu {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ==============================
+   SIDEBAR MENU
+============================== */
+
+.postheader {
+  margin: 5px;
+}
+
+.dp {
+  height: 30px;
+  width: 30px;
+}
+.suggestionimage {
+  height: 40px;
+  weight: 40px;
+}
+h5{
+  text-align: center;
+}
+.card {
+  margin-top: 15px;
+  border: 2px solid black;
+}
+.postfooter {
+  margin: 10px;
+}
+.postfooteravatar {
+  margin-top: 5px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.likedtext {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+/* .iconsize{
+  width: 30px;
+  height: 30px;
+} */
+.suggestionprofilecontainer {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.profilesuggestion {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.suggestionall {
+  display: flex;
+  justify-content: space-between;
+}
+.profilesuggestioncontainer1 {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.profilesuggestioncontainer1 h5 {
+  font-size: 16px;
+}
+
+/* ======================================================= */
+.story {
+  display: flex;
+  gap: 15px;
+  padding: 10px 15px;
+  overflow-x: auto;
+}
+
+.story::-webkit-scrollbar {
+  display: none;
+}
+
+.onestory {
+  min-width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.story-ring {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+/* Gradient */
+.story-ring::before {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+
+  background: conic-gradient(#f9ce34, #ee2a7b, #6228d7, #f9ce34);
+}
+
+/* White inner circle */
+.story-ring::after {
+  content: "";
+  position: absolute;
+
+  width: 64px;
+  height: 64px;
+
+  border-radius: 50%;
+  background: white;
+}
+
+/* Profile image */
+.story-ring img {
+  width: 60px;
+  height: 60px;
+
+  object-fit: cover;
+  border-radius: 50%;
+
+  position: relative;
+  z-index: 2;
+}
+
+/* Start spinning only after click */
+.story-ring.spin::before {
+  animation: spinGradient 0.6s linear;
+}
+
+@keyframes spinGradient {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.onestory h4 {
+  width: 70px;
+  margin: 5px 0 0;
+
+  text-align: center;
+  font-size: 13px;
+}
+
+/* ============================================================================ */
+
+.posts-container {
+  width: 100%;
+  max-width: 630px;
+  margin: 0 auto;
+}
+
+.instagram-post {
+  width: 100%;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* HEADER */
+
+.post-header {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 4px;
+}
+
+.post-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-profile-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-user strong {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.post-menu {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* IMAGE */
+
+.post-image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.post-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* FOOTER */
+
+.post-footer {
+  padding: 0 4px;
+}
+
+/* ACTIONS */
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.left-actions {
+  display: flex;
+  gap: 18px;
+}
+
+.post-actions i {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.post-actions i:hover {
+  opacity: 0.6;
+}
+
+.liked-icon {
+  color: red;
+}
+
+/* LIKES */
+
+.likes {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.likes strong {
+  font-weight: 600;
+}
+
+/* CAPTION */
+
+.caption {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.caption strong {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+/* COMMENTS */
+
+.comments {
+  font-size: 14px;
+}
+
+.view-comments {
+  display: block;
+  color: #737373;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.comment-preview {
+  line-height: 1.5;
+}
+
+.comment-preview strong {
+  font-weight: 600;
+}
+
+/* ADD COMMENT */
+
+.add-comment {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #efefef;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.add-comment input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.add-comment button {
+  border: none;
+  background: transparent;
+  color: #0095f6;
+  font-weight: 600;
+  cursor: pointer;
 }

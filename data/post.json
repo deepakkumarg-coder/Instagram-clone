@@ -1,0 +1,313 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "user": {
+        "id": 101,
+        "username": "john_doe",
+        "name": "John Doe",
+        "profileImage": "https://i.pravatar.cc/150?img=1"
+      },
+      "image": "https://picsum.photos/id/1011/600/600",
+      "caption": "Beautiful morning and a fresh start ☀️",
+      "likes": 124,
+      "commentsCount": 3,
+      "comments": [
+        {
+          "id": 1,
+          "user": {
+            "username": "alex_photos",
+            "profileImage": "https://i.pravatar.cc/150?img=2"
+          },
+          "text": "Amazing photo! 🔥"
+        },
+        {
+          "id": 2,
+          "user": {
+            "username": "sarah_style",
+            "profileImage": "https://i.pravatar.cc/150?img=1"
+          },
+          "text": "Love this ❤️"
+        },
+        {
+          "id": 3,
+          "user": {
+            "username": "travel_anna",
+            "profileImage": "https://i.pravatar.cc/150?img=4"
+          },
+          "text": "Such a beautiful view 😍"
+        }
+      ],
+      "createdAt": "2026-09-25T08:30:00Z",
+      "location": "Chennai, India",
+      "isLiked": false
+    },
+    {
+      "id": "2",
+      "user": {
+        "id": 102,
+        "username": "travel_anna",
+        "name": "Anna Wilson",
+        "profileImage": "https://i.pravatar.cc/150?img=4"
+      },
+      "image": "https://picsum.photos/id/1015/600/600",
+      "caption": "Lost somewhere between the mountains and the clouds 🏔️☁️",
+      "likes": 342,
+      "commentsCount": 3,
+      "comments": [
+        {
+          "id": 4,
+          "user": {
+            "username": "john_doe",
+            "profileImage": "https://i.pravatar.cc/150?img=1"
+          },
+          "text": "This place looks incredible!"
+        },
+        {
+          "id": 5,
+          "user": {
+            "username": "nature_daily",
+            "profileImage": "https://i.pravatar.cc/150?img=5"
+          },
+          "text": "Wow! I want to visit 😍"
+        },
+        {
+          "id": 6,
+          "user": {
+            "username": "mike_travels",
+            "profileImage": "https://i.pravatar.cc/150?img=6"
+          },
+          "text": "Adding this to my bucket list ✈️"
+        }
+      ],
+      "createdAt": "2026-09-24T15:20:00Z",
+      "location": "Manali, India",
+      "isLiked": true
+    },
+    {
+      "id": "3",
+      "user": {
+        "id": 103,
+        "username": "foodie_world",
+        "name": "Foodie World",
+        "profileImage": "https://i.pravatar.cc/150?img=7"
+      },
+      "image": "https://picsum.photos/id/292/600/600",
+      "caption": "Good food, good mood 🍕❤️",
+      "likes": 521,
+      "commentsCount": 3,
+      "comments": [
+        {
+          "id": 7,
+          "user": {
+            "username": "john_doe",
+            "profileImage": "https://i.pravatar.cc/150?img=1"
+          },
+          "text": "That looks delicious 🤤"
+        },
+        {
+          "id": 8,
+          "user": {
+            "username": "coffee_addict",
+            "profileImage": "https://i.pravatar.cc/150?img=8"
+          },
+          "text": "Now I'm hungry 😂"
+        },
+        {
+          "id": 9,
+          "user": {
+            "username": "alex_photos",
+            "profileImage": "https://i.pravatar.cc/150?img=2"
+          },
+          "text": "Where is this? 🔥"
+        }
+      ],
+      "createdAt": "2026-09-23T11:45:00Z",
+      "location": "Bangalore, India",
+      "isLiked": false
+    },
+    {
+      "id": "4",
+      "user": {
+        "id": 104,
+        "username": "alex_photos",
+        "name": "Alex Martin",
+        "profileImage": "https://i.pravatar.cc/150?img=2"
+      },
+      "image": "https://picsum.photos/id/1003/600/600",
+      "caption": "Chasing sunsets 🌅",
+      "likes": 287,
+      "commentsCount": 3,
+      "comments": [
+        {
+          "id": 10,
+          "user": {
+            "username": "travel_anna",
+            "profileImage": "https://i.pravatar.cc/150?img=4"
+          },
+          "text": "Absolutely stunning 🌅"
+        },
+        {
+          "id": 11,
+          "user": {
+            "username": "sarah_style",
+            "profileImage": "https://i.pravatar.cc/150?img=1"
+          },
+          "text": "Beautiful colors ❤️"
+        },
+        {
+          "id": 12,
+          "user": {
+            "username": "nature_daily",
+            "profileImage": "https://i.pravatar.cc/150?img=5"
+          },
+          "text": "Sunsets never disappoint!"
+        }
+      ],
+      "createdAt": "2026-09-22T18:10:00Z",
+      "location": "Goa, India",
+      "isLiked": true
+    },
+    {
+      "id": "5",
+      "user": {
+        "id": 105,
+        "username": "nature_daily",
+        "name": "Nature Daily",
+        "profileImage": "https://i.pravatar.cc/150?img=5"
+      },
+      "image": "https://picsum.photos/id/1040/600/600",
+      "caption": "Nature never goes out of style 🌿",
+      "likes": 654,
+      "commentsCount": 3,
+      "comments": [
+        {
+          "id": 13,
+          "user": {
+            "username": "john_doe",
+            "profileImage": "https://i.pravatar.cc/150?img=1"
+          },
+          "text": "Peaceful and beautiful 🌿"
+        },
+        {
+          "id": 14,
+          "user": {
+            "username": "travel_anna",
+            "profileImage": "https://i.pravatar.cc/150?img=4"
+          },
+          "text": "Nature is the best therapy ❤️"
+        },
+        {
+          "id": 15,
+          "user": {
+            "username": "mike_travels",
+            "profileImage": "https://i.pravatar.cc/150?img=6"
+          },
+          "text": "What a shot! 📸"
+        }
+      ],
+      "createdAt": "2026-09-21T09:15:00Z",
+      "location": "Munnar, India",
+      "isLiked": false
+    }
+  ],
+  "profile": [
+    {
+      "id": "1",
+      "success": true,
+      "user": {
+        "_id": "65abc123",
+        "username": "deepak_doe",
+        "name": "deepak Doe",
+        "bio": "filimaker 📸 | Travel 🌍",
+        "profileImage": "https://i.pravatar.cc/300?img=12",
+        "followersCount": 1200,
+        "followingCount": 350,
+        "postsCount": 24,
+        "isFollowing": false
+      },
+      "posts": [
+        {
+          "_id": "post001",
+          "image": "https://picsum.photos/id/1015/600/600",
+          "likesCount": 245,
+          "commentsCount": 18
+        },
+        {
+          "_id": "post002",
+          "image": "https://picsum.photos/id/1025/600/600",
+          "likesCount": 189,
+          "commentsCount": 12
+        },
+        {
+          "_id": "post003",
+          "image": "https://picsum.photos/id/1035/600/600",
+          "likesCount": 312,
+          "commentsCount": 25
+        }
+      ]
+    }
+  ],
+  "suggestion": [
+    {
+      "_id": "65abc123",
+      "username": "john_doe",
+      "name": "John Doe",
+      "profileImage": "https://i.pravatar.cc/150?img=1",
+      "followersCount": 1200,
+      "isFollowing": false,
+      "id": "oB-CF7egN6k"
+    },
+    {
+      "_id": "65def456",
+      "username": "jane_smith",
+      "name": "Jane Smith",
+      "profileImage": "https://i.pravatar.cc/150?img=47",
+      "followersCount": 850,
+      "isFollowing": false,
+      "id": "e4fjjtQQkmU"
+    },
+    {
+      "_id": "65ghi789",
+      "username": "alex_wilson",
+      "name": "Alex Wilson",
+      "profileImage": "https://i.pravatar.cc/150?img=33",
+      "followersCount": 2100,
+      "isFollowing": false,
+      "id": "L3_ybp4MM9M"
+    }
+  ],
+  "story": [
+    {
+      "id": "1",
+      "user": {
+        "id": 101,
+        "username": "john_doe",
+        "name": "John Doe",
+        "profileImage": "https://i.pravatar.cc/150?img=1"
+      },
+      "image": "https://picsum.photos/id/1011/600/600"
+    },
+    {
+      "id": "2",
+      "user": {
+        "id": 102,
+        "username": "travel_anna",
+        "name": "Anna Wilson",
+        "profileImage": "https://i.pravatar.cc/150?img=4"
+      },
+      "image": "https://picsum.photos/id/1011/600/600"
+    },
+    {
+      "id": "3",
+      "user": {
+        "id": 103,
+        "username": "foodie_world",
+        "name": "Foodie World",
+        "profileImage": "https://i.pravatar.cc/150?img=7"
+      },
+      "image": "https://picsum.photos/id/1011/600/600"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

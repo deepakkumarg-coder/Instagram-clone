@@ -1,0 +1,38 @@
+{
+  "profile": [
+    {
+      "success": true,
+      "user": {
+        "_id": "65abc123",
+        "username": "john_doe",
+        "name": "John Doe",
+        "bio": "Photographer 📸 | Travel 🌍",
+        "profileImage": "https://i.pravatar.cc/300?img=12",
+        "followersCount": 1200,
+        "followingCount": 350,
+        "postsCount": 24,
+        "isFollowing": false
+      },
+      "posts": [
+        {
+          "_id": "post001",
+          "image": "https://picsum.photos/id/1015/600/600",
+          "likesCount": 245,
+          "commentsCount": 18
+        },
+        {
+          "_id": "post002",
+          "image": "https://picsum.photos/id/1025/600/600",
+          "likesCount": 189,
+          "commentsCount": 12
+        },
+        {
+          "_id": "post003",
+          "image": "https://picsum.photos/id/1035/600/600",
+          "likesCount": 312,
+          "commentsCount": 25
+        }
+      ]
+    }
+  ]
+}
